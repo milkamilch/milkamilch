@@ -12,7 +12,7 @@ $ whoami
 
 > 🎓 Wirtschaftsinformatik · Bachelorarbeit 2026  
 > 🔧 Backend-lastig — Java + Spring Boot · Python  
-> 🌍 Hamburg, Germany  
+> 🌍 Dortmund, Germany  
 
 <br>
 
@@ -47,7 +47,6 @@ $ github-stats --user milkamilch
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=milkamilch&theme=chartreuse-dark&hide_border=true&show_icons=true&icon_color=39ff14)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=milkamilch&theme=chartreuse-dark&hide_border=true&layout=compact)
+[![GitHub Streak](https://streak-stats.demolab.com?user=milkamilch&theme=chartreuse-dark&hide_border=true&date_format=j.%20n.%5B%20Y%5D)](https://git.io/streak-stats)
 
 </div>
