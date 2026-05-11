@@ -12,4 +12,4 @@ $ whoami
 
 > 🎓 Wirtschaftsinformatik · Bachelorarbeit 2026  
 > 🔧 Backend-lastig — Java + Spring Boot · Python  
-> 🌍 Hamburg, Germany
+> 🌍 Hamburg, Germany  
