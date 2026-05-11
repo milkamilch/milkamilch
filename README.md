@@ -13,3 +13,13 @@ $ whoami
 > 🎓 Wirtschaftsinformatik · Bachelorarbeit 2026  
 > 🔧 Backend-lastig — Java + Spring Boot · Python  
 > 🌍 Hamburg, Germany  
+
+<br>
+
+```bash
+$ cat current_project.txt
+```
+
+**📡 [ZTP-KI-Framework](https://github.com/milkamilch/ZTP-KI-framework)**  
+Zero-Touch-Provisioning mit KI-Self-Healing für Bare-Metal-Server  
+`Python` · `Isolation Forest` · `Redfish` · `Ansible` · `Docker`
