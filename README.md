@@ -50,3 +50,17 @@ $ github-stats --user milkamilch
 [![GitHub Streak](https://streak-stats.demolab.com?user=milkamilch&theme=chartreuse-dark&hide_border=true&date_format=j.%20n.%5B%20Y%5D)](https://git.io/streak-stats)
 
 </div>
+
+<br>
+
+```bash
+$ ps aux | grep lars
+```
+
+```
+PID   COMMAND
+1337  🎮 gaming
+1338  🤾 handball
+1339  🖥️  homelab
+1340  ⛳ golf
+```
