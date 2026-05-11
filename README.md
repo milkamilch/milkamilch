@@ -38,3 +38,16 @@ $ ls tech_stack/
 ![Docker](https://img.shields.io/badge/Docker-21262d?style=flat-square&logo=docker&logoColor=39ff14)
 ![Ansible](https://img.shields.io/badge/Ansible-21262d?style=flat-square&logo=ansible&logoColor=39ff14)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-21262d?style=flat-square&logo=postgresql&logoColor=39ff14)
+
+<br>
+
+```bash
+$ github-stats --user milkamilch
+```
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=milkamilch&theme=chartreuse-dark&hide_border=true&show_icons=true&icon_color=39ff14)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=milkamilch&theme=chartreuse-dark&hide_border=true&layout=compact)
+
+</div>
