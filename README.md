@@ -76,6 +76,18 @@ lars@dortmund:~$ ls -la pinned_repos/
 
 </div>
 
+```bash
+lars@dortmund:~$ cat FairwayIQ/architecture.md
+```
+
+```mermaid
+flowchart LR
+    Mobile["📱 Expo App"] -->|REST + JWT| Backend["Express API\n(Prisma)"]
+    Backend --> Postgres[("PostgreSQL")]
+    Backend -->|swing video| MLService["swing-ml\n(MediaPipe Pose)"]
+    MLService -->|metrics| Backend
+```
+
 ```text
 lars@dortmund:~$ // ──────────────────────────────────────────────
 ```
