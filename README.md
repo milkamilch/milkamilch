@@ -49,6 +49,23 @@ $ github-stats --user milkamilch
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=milkamilch&theme=chartreuse-dark&hide_border=true&date_format=j.%20n.%5B%20Y%5D)](https://git.io/streak-stats)
 
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=milkamilch&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true)](https://github.com/milkamilch)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=milkamilch&layout=compact&theme=chartreuse-dark&hide_border=true)](https://github.com/milkamilch)
+
+</div>
+
+<br>
+
+```bash
+$ ls -la pinned_repos/
+```
+
+<div align="center">
+
+[![FairwayIQ](https://github-readme-stats.vercel.app/api/pin/?username=milkamilch&repo=FairwayIQ&theme=chartreuse-dark&hide_border=true)](https://github.com/milkamilch/FairwayIQ)
+[![ztp-ki-framework](https://github-readme-stats.vercel.app/api/pin/?username=milkamilch&repo=ztp-ki-framework&theme=chartreuse-dark&hide_border=true)](https://github.com/milkamilch/ztp-ki-framework)
+[![PersonalOs](https://github-readme-stats.vercel.app/api/pin/?username=milkamilch&repo=PersonalOs&theme=chartreuse-dark&hide_border=true)](https://github.com/milkamilch/PersonalOs)
+
 </div>
 
 <br>
@@ -74,5 +91,13 @@ PID   COMMAND
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/milkamilch/milkamilch/output/github-contribution-grid-snake.svg" />
   <img alt="contribution snake" src="https://raw.githubusercontent.com/milkamilch/milkamilch/output/github-contribution-grid-snake.svg" />
 </picture>
+
+</div>
+
+<br>
+
+<div align="center">
+
+![Profile Views](https://komarev.com/ghpvc/?username=milkamilch&color=39ff14&style=flat-square&label=profile+views)
 
 </div>
