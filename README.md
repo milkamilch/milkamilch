@@ -30,6 +30,8 @@ lars@dortmund:~$ cat current_project.txt
 Zero-Touch-Provisioning mit KI-Self-Healing für Bare-Metal-Server
 `Python` · `Isolation Forest` · `Redfish` · `Ansible` · `Docker`
 
+> 💡 Erkennt Anomalien live während der PXE-Provisionierung (Redfish/IPMI → Drain3 → Isolation Forest) und entscheidet autonom über Retry/Reboot/Rollback — Serverausfälle bei der Inbetriebnahme ohne manuellen Eingriff behoben. Forschungsfrage der Arbeit: ab welcher Serverzahl sich das für KMU wirtschaftlich lohnt vs. Enterprise-Rechenzentren.
+
 ```text
 lars@dortmund:~$ // ──────────────────────────────────────────────
 ```
