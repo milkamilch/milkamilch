@@ -1,33 +1,41 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=39FF14&center=true&vCenter=true&width=500&lines=Hi%2C+I'm+Lars+%F0%9F%91%BE;Developer+%C2%B7+Student+%C2%B7+Builder;ZTP+%C2%B7+Backend+%C2%B7+KI)](https://github.com/milkamilch)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:39ff14&height=180&section=header&text=Lars%20Wenner&fontSize=42&fontColor=39ff14&animation=fadeIn&fontAlignY=38&desc=Developer%20%C2%B7%20Student%20%C2%B7%20Builder&descAlignY=58&descSize=18&descColor=e6fce6)
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=39FF14&center=true&vCenter=true&width=500&lines=whoami+%3E+backend+dev+%F0%9F%91%BE;current+focus+%3E+ZTP+%C2%B7+KI+%C2%B7+Self-Healing)](https://github.com/milkamilch)
 
 </div>
 
-<br>
-
-```bash
-$ whoami
+```text
+lars@dortmund:~$ // ──────────────────────────────────────────────
 ```
 
-> 🎓 Wirtschaftsinformatik · Bachelorarbeit 2026  
-> 🔧 Backend-lastig — Java + Spring Boot · Python  
-> 🌍 Dortmund, Germany  
-
-<br>
-
 ```bash
-$ cat current_project.txt
+lars@dortmund:~$ whoami
 ```
 
-**📡 [ZTP-KI-Framework](https://github.com/milkamilch/ZTP-KI-framework)**  
-Zero-Touch-Provisioning mit KI-Self-Healing für Bare-Metal-Server  
+> 🎓 Wirtschaftsinformatik · Bachelorarbeit 2026
+> 🔧 Backend-lastig — Java + Spring Boot · Python
+> 🌍 Dortmund, Germany
+
+```text
+lars@dortmund:~$ // ──────────────────────────────────────────────
+```
+
+```bash
+lars@dortmund:~$ cat current_project.txt
+```
+
+**📡 [ZTP-KI-Framework](https://github.com/milkamilch/ZTP-KI-framework)**
+Zero-Touch-Provisioning mit KI-Self-Healing für Bare-Metal-Server
 `Python` · `Isolation Forest` · `Redfish` · `Ansible` · `Docker`
 
-<br>
+```text
+lars@dortmund:~$ // ──────────────────────────────────────────────
+```
 
 ```bash
-$ ls tech_stack/
+lars@dortmund:~$ ls tech_stack/
 ```
 
 ![Java](https://img.shields.io/badge/Java_25-21262d?style=flat-square&logo=openjdk&logoColor=39ff14)
@@ -39,10 +47,12 @@ $ ls tech_stack/
 ![Ansible](https://img.shields.io/badge/Ansible-21262d?style=flat-square&logo=ansible&logoColor=39ff14)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-21262d?style=flat-square&logo=postgresql&logoColor=39ff14)
 
-<br>
+```text
+lars@dortmund:~$ // ──────────────────────────────────────────────
+```
 
 ```bash
-$ github-stats --user milkamilch
+lars@dortmund:~$ github-stats --user milkamilch
 ```
 
 <div align="center">
@@ -54,10 +64,8 @@ $ github-stats --user milkamilch
 
 </div>
 
-<br>
-
 ```bash
-$ ls -la pinned_repos/
+lars@dortmund:~$ ls -la pinned_repos/
 ```
 
 <div align="center">
@@ -68,21 +76,9 @@ $ ls -la pinned_repos/
 
 </div>
 
-<br>
-
-```bash
-$ ps aux | grep lars
+```text
+lars@dortmund:~$ // ──────────────────────────────────────────────
 ```
-
-```
-PID   COMMAND
-1337  🎮 gaming
-1338  🤾 handball
-1339  🖥️  homelab
-1340  ⛳ golf
-```
-
-<br>
 
 <div align="center">
 
@@ -92,12 +88,22 @@ PID   COMMAND
   <img alt="contribution snake" src="https://raw.githubusercontent.com/milkamilch/milkamilch/output/github-contribution-grid-snake.svg" />
 </picture>
 
-</div>
-
-<br>
-
-<div align="center">
-
 ![Profile Views](https://komarev.com/ghpvc/?username=milkamilch&color=39ff14&style=flat-square&label=profile+views)
 
 </div>
+
+```text
+lars@dortmund:~$ // ──────────────────────────────────────────────
+```
+
+```bash
+lars@dortmund:~$ ps aux | grep lars
+```
+
+```
+PID   COMMAND
+1337  🎮 gaming
+1338  🤾 handball
+1339  🖥️  homelab
+1340  ⛳ golf
+```
