@@ -1,0 +1,38 @@
+name: Daily Auto Committer
+
+on:
+  schedule:
+    # Führt das Skript jeden Tag um 10:00 Uhr UTC aus
+    - cron: '0 10 * * *'
+  workflow_dispatch: # Erlaubt es dir, das Skript auch manuell über den "Actions" Tab zu starten
+
+permissions:
+  contents: write
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git Config
+        run: |
+          git config --global user.name "milkamilch"
+          git config --global user.email "larswenner00@gmail.com"
+
+      - name: Generate Random Empty Commits
+        run: |
+          # Generiert eine zufällige Zahl zwischen 3 und 14
+          NUM_COMMITS=$(( ( RANDOM % 12 )  + 3 ))
+          echo "Es werden heute $NUM_COMMITS leere Commits erstellt..."
+
+          # Schleife, die die Commits ausführt
+          for i in $(seq 1 $NUM_COMMITS); do
+            # --allow-empty erlaubt Commits ohne geänderte Dateien
+            git commit --allow-empty -m "Automated empty commit $i"
+          done
+
+      - name: Push changes
+        run: |
+          git push
