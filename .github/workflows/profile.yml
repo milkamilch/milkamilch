@@ -24,6 +24,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - run: |
+          python3 scripts/route.py dist/route.svg
+          python3 scripts/fortune.py dist/fortune.svg
+
       - uses: Platane/snk@v3
         with:
           github_user_name: milkamilch

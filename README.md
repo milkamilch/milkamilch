@@ -25,6 +25,12 @@ lars@dortmund:~$ cat about.md
 > 🧠 Into optimization problems, backends that don't page you at 3 a.m., and homelabs<br>
 > 🌍 Dortmund, Germany
 
+<div align="center">
+
+<img alt="Today's garbage truck tour: a new random city every day, solved with nearest neighbour + 2-opt" width="100%" src="https://raw.githubusercontent.com/milkamilch/milkamilch/output/route.svg" />
+
+</div>
+
 ```text
 lars@dortmund:~$ // ──────────────────────────────────────────────
 ```
@@ -91,6 +97,12 @@ lars@dortmund:~$ cat ~/.todo
 ! [ ] Lower my golf handicap              # FairwayIQ is on it
 - [ ] Understand JavaScript               # wontfix
 ```
+
+<div align="center">
+
+<img alt="fortune of the day" width="100%" src="https://raw.githubusercontent.com/milkamilch/milkamilch/output/fortune.svg" />
+
+</div>
 
 ```bash
 lars@dortmund:~$ ps aux | grep lars
