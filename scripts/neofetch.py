@@ -8,6 +8,7 @@ import datetime
 import json
 import os
 import sys
+import urllib.error
 import urllib.request
 from xml.sax.saxutils import escape
 
@@ -56,13 +57,20 @@ ARCH_LOGO = r"""
 """.strip("\n").split("\n")
 
 
-def get(url):
+def get(url, auth=True):
     req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json", "User-Agent": USER})
     token = os.environ.get("GITHUB_TOKEN")
-    if token:
+    if token and auth:
         req.add_header("Authorization", f"Bearer {token}")
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.load(resp)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.load(resp)
+    except urllib.error.HTTPError as e:
+        # The Actions token is not accepted everywhere (e.g. commit search); public data works without it.
+        if token and auth and e.code in (401, 403, 422):
+            return get(url, auth=False)
+        print(f"{e.code} {url}\n{e.read().decode(errors='replace')}", file=sys.stderr)
+        raise
 
 
 def collect():
