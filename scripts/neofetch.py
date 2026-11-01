@@ -14,6 +14,9 @@ from xml.sax.saxutils import escape
 
 USER = "milkamilch"
 
+# First line of code ever written — the "uptime" counts from here.
+FIRST_CODE = datetime.date(2015, 5, 16)
+
 # Languages that only say "there was a web page" — not what the projects are built in.
 IGNORED_LANGUAGES = {"HTML", "CSS", "Dockerfile", "Shell", "PowerShell", "Batchfile", "Procfile", "Makefile",
                      "Cython", "C", "GoTemplate"}
@@ -87,14 +90,12 @@ def collect():
         for lang, size in sizes.items():
             languages[lang] = languages.get(lang, 0) + size / repo_total
     commits = get(f"https://api.github.com/search/commits?q=author:{USER}")["total_count"]
-    created = datetime.datetime.fromisoformat(user["created_at"].replace("Z", "+00:00"))
     latest = max((r for r in repos if r["name"] != USER), key=lambda r: r["pushed_at"])
     return {
         "repos": len([r for r in repos if r["name"] != USER]),
         "stars": stars,
         "followers": user["followers"],
         "commits": commits,
-        "created": created,
         "latest": (latest["name"], datetime.datetime.fromisoformat(latest["pushed_at"].replace("Z", "+00:00"))),
         "languages": sorted(languages.items(), key=lambda kv: -kv[1])[:5],
     }
@@ -105,10 +106,13 @@ def ago(then, now):
     return "today" if days == 0 else "yesterday" if days == 1 else f"{days} days ago"
 
 
-def uptime(created, now):
-    days = (now - created).days
-    years, days = divmod(days, 365)
-    return f"{years} years, {days} days" if years else f"{days} days"
+def uptime(since, today):
+    years = today.year - since.year - ((today.month, today.day) < (since.month, since.day))
+    try:
+        anniversary = since.replace(year=since.year + years)
+    except ValueError:  # 29 Feb in a non-leap year
+        anniversary = since.replace(year=since.year + years, day=28)
+    return f"{years} years, {(today - anniversary).days} days"
 
 
 def appear(at):
@@ -122,7 +126,7 @@ def render(data, now):
     rows += [(k, v, FG) for k, v in STATIC_LINES]
     rows += [
         ("Hacking on", f"{data['latest'][0]} (last push {ago(data['latest'][1], now)})", FG),
-        ("Uptime", uptime(data["created"], now), FG),
+        ("Uptime", f"{uptime(FIRST_CODE, now.date())} (since first line of code)", FG),
         ("Packages", f"{data['repos']} public repos · {data['stars']} ★", FG),
         ("Commits", f"{data['commits']:,} (public, all time)", FG),
         ("Followers", f"{data['followers']} (hi mom)", FG),
