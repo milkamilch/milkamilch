@@ -88,14 +88,21 @@ def collect():
             languages[lang] = languages.get(lang, 0) + size / repo_total
     commits = get(f"https://api.github.com/search/commits?q=author:{USER}")["total_count"]
     created = datetime.datetime.fromisoformat(user["created_at"].replace("Z", "+00:00"))
+    latest = max((r for r in repos if r["name"] != USER), key=lambda r: r["pushed_at"])
     return {
         "repos": len([r for r in repos if r["name"] != USER]),
         "stars": stars,
         "followers": user["followers"],
         "commits": commits,
         "created": created,
+        "latest": (latest["name"], datetime.datetime.fromisoformat(latest["pushed_at"].replace("Z", "+00:00"))),
         "languages": sorted(languages.items(), key=lambda kv: -kv[1])[:5],
     }
+
+
+def ago(then, now):
+    days = (now - then).days
+    return "today" if days == 0 else "yesterday" if days == 1 else f"{days} days ago"
 
 
 def uptime(created, now):
@@ -108,6 +115,7 @@ def render(data, now):
     rows = [("", f"{USER}@github", ACCENT), ("", "─" * 38, DIM)]
     rows += [(k, v, FG) for k, v in STATIC_LINES]
     rows += [
+        ("Hacking on", f"{data['latest'][0]} (last push {ago(data['latest'][1], now)})", FG),
         ("Uptime", uptime(data["created"], now), FG),
         ("Packages", f"{data['repos']} public repos · {data['stars']} ★", FG),
         ("Commits", f"{data['commits']:,} (public, all time)", FG),
