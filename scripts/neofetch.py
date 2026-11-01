@@ -111,6 +111,12 @@ def uptime(created, now):
     return f"{years} years, {days} days" if years else f"{days} days"
 
 
+def appear(at):
+    """Hidden until `at` seconds, then shown for good. Renderers without SMIL just show it."""
+    dur = at + 0.05
+    return f'<animate attributeName="opacity" values="0;0;1" keyTimes="0;{at / dur:.4f};1" dur="{dur:.2f}s" fill="freeze"/>'
+
+
 def render(data, now):
     rows = [("", f"{USER}@github", ACCENT), ("", "─" * 38, DIM)]
     rows += [(k, v, FG) for k, v in STATIC_LINES]
@@ -139,18 +145,21 @@ def render(data, now):
 
     for i, line in enumerate(ARCH_LOGO):
         y = top + i * line_h
-        out.append(f'<text x="{left_x}" y="{y}" fill="{ACCENT}" xml:space="preserve">{escape(line)}</text>')
+        out.append(f'<text x="{left_x}" y="{y}" fill="{ACCENT}" xml:space="preserve">{escape(line)}{appear(0.1 + i * 0.03)}</text>')
 
+    # The info block "types" in line by line after the logo, like a slow terminal.
+    t = 0.1 + len(ARCH_LOGO) * 0.03 + 0.2
     for i, (key, value, color) in enumerate(rows):
         y = top + i * line_h
+        t += 0.15
         if key:
             out.append(
                 f'<text x="{right_x}" y="{y}" xml:space="preserve">'
                 f'<tspan fill="{ACCENT}" font-weight="bold">{escape(key)}</tspan>'
-                f'<tspan fill="{DIM}">: </tspan><tspan fill="{color}">{escape(value)}</tspan></text>'
+                f'<tspan fill="{DIM}">: </tspan><tspan fill="{color}">{escape(value)}</tspan>{appear(t)}</text>'
             )
         else:
-            out.append(f'<text x="{right_x}" y="{y}" fill="{color}" font-weight="bold">{escape(value)}</text>')
+            out.append(f'<text x="{right_x}" y="{y}" fill="{color}" font-weight="bold">{escape(value)}{appear(t)}</text>')
 
     # Language bar
     y = top + (len(rows) + 1) * line_h
@@ -158,6 +167,8 @@ def render(data, now):
     bar_w = width - right_x - 40
     x = right_x
     palette = [ACCENT, "#2ea043", "#a5d6a7", "#56d364", "#1b4721"]
+    t += 0.3
+    out.append(f"<g>{appear(t)}")
     out.append(f'<text x="{right_x}" y="{y - 6}" fill="{ACCENT}" font-weight="bold">Languages<tspan fill="{DIM}"> (share per repo):</tspan></text>')
     for (lang, size), color in zip(data["languages"], palette):
         w = bar_w * size / total
@@ -175,10 +186,23 @@ def render(data, now):
         out.append(f'<text x="{x + 14}" y="{legend_y}" fill="{FG}" font-size="12">{escape(label)}</text>')
         x += label_w
 
+    out.append("</g>")
+
     # Terminal color blocks, like the real thing
+    t += 0.3
+    out.append(f"<g>{appear(t)}")
     y = legend_y + 22
     for i, color in enumerate(["#0d1117", "#ff7b72", ACCENT, "#e3b341", "#79c0ff", "#d2a8ff", "#56d4dd", FG]):
         out.append(f'<rect x="{right_x + i * 26}" y="{y}" width="24" height="12" fill="{color}" stroke="#30363d"/>')
+    out.append("</g>")
+
+    # Back at the prompt, cursor blinking
+    t += 0.3
+    out.append(
+        f'<text x="{left_x}" y="{height - 12}" fill="{ACCENT}">lars@dortmund<tspan fill="{DIM}">:~$ </tspan>'
+        f'<tspan fill="{FG}">▌<animate attributeName="opacity" values="1;0" dur="1s" begin="{t:.2f}s" '
+        f'calcMode="discrete" repeatCount="indefinite"/></tspan>{appear(t)}</text>'
+    )
 
     out.append(
         f'<text x="{width - 20}" y="{height - 12}" fill="{DIM}" font-size="10" text-anchor="end">'
