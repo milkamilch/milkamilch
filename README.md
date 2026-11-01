@@ -41,7 +41,7 @@ lars@dortmund:~$ ls -l ~/projects
 | ⛳ | **[FairwayIQ](https://github.com/milkamilch/FairwayIQ)** | Golf app with AI swing analysis via pose estimation, round & handicap tracking | `Expo` `Prisma` `MediaPipe` |
 | ➗ | **[Kalkulix](https://github.com/milkamilch/Kalkulix)** | Real-time 1v1 math duels with ELO, streaks and quests — QuizDuel, but the questions fight back | `Expo` `Fastify` `tRPC` `Socket.io` |
 | 💪 | **[TrainingsApp](https://github.com/milkamilch/TrainingsApp)** | iOS workout tracker that writes the plan and bumps the weights for you | `SwiftUI` `SwiftData` |
-| 📺 | **[iptv-player](https://github.com/milkamilch/iptv-player)** | Lightweight IPTV player for Linux — M3U, EPG, HLS | `Electron` `React` |
+| 📺 | **[iptv-player](https://github.com/milkamilch/iptv-player)** | Lightweight desktop IPTV player — Xtream Codes / M3U, EPG, HLS · [download](https://github.com/milkamilch/iptv-player/releases/latest) | `Electron` `React` |
 
 ```bash
 lars@dortmund:~$ cat FairwayIQ/architecture.md
