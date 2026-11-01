@@ -23,7 +23,7 @@ IGNORED_REPOS = {USER, "LLMhackatron"}
 
 STATIC_LINES = [
     ("OS", "Arch Linux (btw) · Hyprland"),
-    ("Host", "Zolitron — Backend Dev"),
+    ("Host", "Backend Dev, full time"),
     ("Kernel", "M.Sc. Wirtschaftsinformatik (compiling…)"),
     ("Shell", "Java 25 · Spring Boot · Python"),
     ("Solver", "OR-Tools, routing garbage trucks"),
