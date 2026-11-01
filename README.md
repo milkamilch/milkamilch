@@ -1,8 +1,8 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:39ff14&height=180&section=header&text=Lars%20Wenner&fontSize=42&fontColor=39ff14&animation=fadeIn&fontAlignY=38&desc=Developer%20%C2%B7%20Student%20%C2%B7%20Builder&descAlignY=58&descSize=18&descColor=e6fce6)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:39ff14&height=180&section=header&text=Lars%20Wenner&fontSize=42&fontColor=39ff14&animation=fadeIn&fontAlignY=38&desc=Backend%20Dev%20%C2%B7%20M.Sc.%20Student%20%C2%B7%20Builder&descAlignY=58&descSize=18&descColor=e6fce6)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=39FF14&center=true&vCenter=true&width=500&lines=whoami+%3E+backend+dev+%F0%9F%91%BE;current+focus+%3E+ZTP+%C2%B7+KI+%C2%B7+Self-Healing)](https://github.com/milkamilch)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=39FF14&center=true&vCenter=true&width=500&lines=whoami+%3E+backend+dev+%40+zolitron+%F0%9F%91%BE;current+focus+%3E+M.Sc.+%C2%B7+Graphen+%C2%B7+Tourenplanung)](https://github.com/milkamilch)
 
 </div>
 
@@ -14,7 +14,8 @@ lars@dortmund:~$ // ────────────────────
 lars@dortmund:~$ whoami
 ```
 
-> 🎓 Wirtschaftsinformatik · Bachelorarbeit 2026
+> 🎓 M.Sc. Wirtschaftsinformatik (läuft) · B.Sc. 2026
+> 💼 Backend @ Zolitron — Tourenplanung für die Abfallwirtschaft
 > 🔧 Backend-lastig — Java + Spring Boot · Python
 > 🌍 Dortmund, Germany
 
@@ -23,14 +24,14 @@ lars@dortmund:~$ // ────────────────────
 ```
 
 ```bash
-lars@dortmund:~$ cat current_project.txt
+lars@dortmund:~$ cat bachelor_thesis.txt
 ```
 
-**📡 [ZTP-KI-Framework](https://github.com/milkamilch/ZTP-KI-framework)**
+**📡 [ZTP-KI-Framework](https://github.com/milkamilch/ZTP-KI-framework)** · Bachelorarbeit, abgeschlossen 2026
 Zero-Touch-Provisioning mit KI-Self-Healing für Bare-Metal-Server
 `Python` · `Isolation Forest` · `Redfish` · `Ansible` · `Docker`
 
-> 💡 Erkennt Anomalien live während der PXE-Provisionierung (Redfish/IPMI → Drain3 → Isolation Forest) und entscheidet autonom über Retry/Reboot/Rollback — Serverausfälle bei der Inbetriebnahme ohne manuellen Eingriff behoben. Forschungsfrage der Arbeit: ab welcher Serverzahl sich das für KMU wirtschaftlich lohnt vs. Enterprise-Rechenzentren.
+> 💡 Erkennt Anomalien live während der PXE-Provisionierung (Redfish/IPMI → Drain3 → Isolation Forest) und entscheidet autonom über Retry/Reboot/Rollback — Serverausfälle bei der Inbetriebnahme ohne manuellen Eingriff behoben. Forschungsfrage der Bachelorarbeit: ab welcher Serverzahl sich das für KMU wirtschaftlich lohnt vs. Enterprise-Rechenzentren.
 
 ```text
 lars@dortmund:~$ // ──────────────────────────────────────────────
