@@ -1,9 +1,14 @@
-name: Generate Snake
+name: Generate profile assets
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile.yml"
 
 jobs:
   generate:
@@ -19,6 +24,11 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Same branch as the snake: the deploy step replaces the whole branch with dist/.
+      - run: python3 scripts/neofetch.py dist/neofetch.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
