@@ -93,7 +93,7 @@ lars@dortmund:~$ cat ~/.todo
 ```diff
 + [x] B.Sc. Business Informatics
 + [x] Get a job where my routes end up in real trucks
-! [ ] M.Sc. Business Informatics          # compiling…
+! [ ] M.Sc. Business Informatics
 ! [ ] Lower my golf handicap              # FairwayIQ is on it
 - [ ] Understand JavaScript               # wontfix
 ```
