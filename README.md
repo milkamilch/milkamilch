@@ -21,7 +21,7 @@ lars@dortmund:~$ cat about.md
 ```
 
 > 💼 **Backend Developer** — tour planning for waste collection: Java · Spring Boot · OR-Tools<br>
-> 🎓 **M.Sc. Business Informatics** (Wirtschaftsinformatik), in progress · B.Sc. 2026 ✔<br>
+> 🎓 **M.Sc. Business Informatics**<br>
 > 🧠 Into optimization problems, backends that don't page you at 3 a.m., and homelabs<br>
 > 🌍 Dortmund, Germany
 
