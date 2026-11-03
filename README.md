@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:39ff14&height=180&section=header&text=Lars%20Wenner&fontSize=42&fontColor=39ff14&animation=fadeIn&fontAlignY=38&desc=Backend%20Dev%20%C2%B7%20M.Sc.%20Student%20%C2%B7%20Builder&descAlignY=58&descSize=18&descColor=e6fce6)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:39ff14&height=180&section=header&text=Lars%20Wenner&fontSize=42&fontColor=39ff14&animation=fadeIn&fontAlignY=38&desc=Backend%20Dev%20%C2%B7%20M.Sc.%20Business%20Informatics%20%C2%B7%20Builder&descAlignY=58&descSize=18&descColor=e6fce6)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=39FF14&center=true&vCenter=true&width=560&lines=whoami+%3E+backend+dev+%F0%9F%91%BE;currently+%3E+routing+garbage+trucks+with+OR-Tools+%F0%9F%9A%9B;also+%3E+doing+a+master%27s+on+the+side+%F0%9F%8E%93;known+issue+%3E+JS+skills+%28wontfix%29)](https://github.com/milkamilch)
 
